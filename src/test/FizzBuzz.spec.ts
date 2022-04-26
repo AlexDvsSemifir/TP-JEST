@@ -3,6 +3,7 @@ import { FizzBuzz } from './../main/FizzBuzz';
 // Contraites :
 // 		- L'utilisateur ne peut pas entrer un nombre négatif
 // 		- L'utilisateur ne peut pas entrer un nombre supérieur à 100
+//      - L'utilisateur ne peut pas entrer de lettres
 
 let fizzBuzz: FizzBuzz;
 
@@ -41,4 +42,9 @@ describe('GIVEN : Je veux utiliser FizzBuzz', () => {
       expect(() => fizzBuzz.fizzBuzz(101)).toThrow();
     });
   });
+  // describe("WHEN : L'utilisateur envoie des lettres", () => {
+  //   it('THEN : une exception est lancée', () => {
+  //     expect(() => fizzBuzz.fizzBuzz('a')).toThrow();
+  //   });
+  // });
 });

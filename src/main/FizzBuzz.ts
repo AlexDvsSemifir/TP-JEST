@@ -1,6 +1,6 @@
 export class FizzBuzz {
   public fizzBuzz(number: number): string {
-    if (number < 0 || number > 100) {
+    if (number < 0 || number > 100 || typeof number !== 'number') {
       throw new Error('Le nombre doit être compris entre 0 et 100');
     }
     if (number % 15 === 0) {
